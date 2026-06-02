@@ -1,16 +1,51 @@
 import { SectionContainer } from "./components/common/SectionContainer";
-import { Navbar, Hero, ProfesionalServices } from "./components/sections";
+import {
+  Navbar,
+  Hero,
+  ProfesionalServices,
+  OurServices,
+  Footer,
+  Featured,
+  HowWorks,
+  Reviews,
+  Banner,
+  FAQs,
+} from "./components/sections";
 
 function App() {
   return (
     <main>
-      <Navbar />
+      {/* <Navbar /> */}
 
-      <Hero />
+      {/* <Hero /> */}
 
-      <SectionContainer id="services">
+      {/* <SectionContainer id="services">
         <ProfesionalServices />
+      </SectionContainer> */}
+
+      {/* <SectionContainer id="our-services">
+        <OurServices />
+      </SectionContainer> */}
+
+      {/* <SectionContainer id="featured" className="bg-primary rounded-3xl">
+        <Featured />
+      </SectionContainer> */}
+
+      {/* <SectionContainer id="how-it-works">
+        <HowWorks />
+      </SectionContainer> */}
+
+      <SectionContainer id="how-it-works">
+        <Reviews />
       </SectionContainer>
+
+      {/* <SectionContainer id="how-it-works">
+        <FAQs />
+      </SectionContainer> */}
+
+      {/* <Banner /> */}
+
+      {/* <Footer /> */}
     </main>
   );
 }

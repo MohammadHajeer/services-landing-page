@@ -12,6 +12,7 @@
   --primary-muted: #9ea3b5;
 
   --secondary: #15b2f5;
+  --secondary-accent: #4ac9ff;
   --secondary-foreground: #fff;
 
   --surface: #f3f5f9;
@@ -33,6 +34,7 @@
   --color-primary-muted: var(--primary-muted);
 
   --color-secondary: var(--secondary);
+  --color-secondary-accent: var(--secondary-accent);
   --color-secondary-foreground: var(--secondary-foreground);
 
   --color-surface: var(--surface);
@@ -50,4 +52,22 @@
 @utility container {
   margin-inline: auto;
   padding-inline: 1rem;
+}
+
+::selection {
+  background-color: var(--primary-accent);
+  color: var(--primary-foreground);
+}
+
+@utility section-heading {
+  @apply text-[52px] max-sm:text-2xl font-bold sm:leading-16;
+}
+
+@utility section-subheading {
+  @apply text-lg text-muted;
+}
+
+@utility grid-auto-wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }

@@ -7,8 +7,6 @@ import { Fragment } from "react";
 
 const { title, highlights } = HERO;
 
-// TODO: Compelete the bottom desgin and make it responsive
-
 function Hero() {
   return (
     <div className="bg-primary text-primary-foreground overflow-hidden">
@@ -17,7 +15,7 @@ function Hero() {
           <img
             src={WorkerRepairing}
             alt="Worker Repairing"
-            className="rounded-2xl rounded-br-none "
+            className="rounded-2xl rounded-br-none select-none"
           />
           <span className="absolute inset-0 -bg-linear-60 from-primary via-transparent to-transparent"></span>
         </div>
@@ -72,7 +70,7 @@ function Hero() {
           <img
             src={WorkerPlumbing}
             alt="Worker Plumbing"
-            className="rounded-2xl rounded-bl-none"
+            className="rounded-2xl rounded-bl-none select-none"
           />
           <span className="absolute inset-0 bg-linear-60 from-primary via-transparent to-transparent"></span>
         </div>

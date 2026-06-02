@@ -15,7 +15,6 @@ import IconCalendarFilled from "../assets/icons/icon-calendar-filled.svg";
 import IconQuotes from "../assets/icons/icon-quotes-filled.svg";
 import Icon24H from "../assets/icons/icon-24h-Filled.svg";
 import IconCommitment from "../assets/icons/icon-commitment-filled.svg";
-import IconGuranteeCheck from "../assets/icons/icon-guarantee-check.svg";
 
 import IconYoutube from "../assets/icons/icon-youtube.svg";
 import IconInstagram from "../assets/icons/icon-instagram.svg";
@@ -24,12 +23,12 @@ import IconTwiiter from "../assets/icons/icon-twitter.svg";
 import IconMail from "../assets/icons/icon-mail.svg";
 
 import Worker from "../assets/images/how-works-worker.png";
-import Bg from "../assets/images/how-works-bg.png";
 import ReviewLogo from "../assets/images/review-logo.png";
 import Thumbnail_01 from "../assets/images/blog-thumbnail-01.png";
 import Thumbnail_02 from "../assets/images/blog-thumbnail-02.png";
 import Thumbnail_03 from "../assets/images/blog-thumbnail-03.png";
 import Banner from "../assets/images/banner.png";
+import FooterLogo from "../assets/images/footer-logo.png";
 
 const NAV_LINKS = [
   {
@@ -144,28 +143,28 @@ const FEATURES = {
         "You don't need to worry about scams or our performance results. our company has been verified and strives for optimal results",
     },
     {
-      icon: IconLocal,
-      title: "Local Professionals",
-      description:
-        "Our services cover the Nationwide, US area, including urban, suburban, and rural locations for both long and short term maintenance",
-    },
-    {
-      icon: IconCalendarFilled,
-      title: "Flexible Appointments",
-      description:
-        "We offer convenient appointment times that can accommodate your busy schedule, day or night, 7 days a week.",
-    },
-    {
       icon: IconQuotes,
       title: "Free Quotes",
       description:
         "Get personalized cost estimates without any obligation. Experience transparency and peace of mind as you explore our service.",
     },
     {
+      icon: IconLocal,
+      title: "Local Professionals",
+      description:
+        "Our services cover the Nationwide, US area, including urban, suburban, and rural locations for both long and short term maintenance",
+    },
+    {
       icon: Icon24H,
       title: "Fast 24-Hour Service",
       description:
         "Need fast handling for repairs to drains, leaks or something else? Our experts are available anytime to help you solve the problem",
+    },
+    {
+      icon: IconCalendarFilled,
+      title: "Flexible Appointments",
+      description:
+        "We offer convenient appointment times that can accommodate your busy schedule, day or night, 7 days a week.",
     },
     {
       icon: IconCommitment,
@@ -177,12 +176,8 @@ const FEATURES = {
 };
 
 const HOW_WORKS = {
-  title: "How HomePro works?",
-  image: {
-    icon: IconGuranteeCheck,
-    worker: Worker,
-    background: Bg,
-  },
+  title: "How HomePro \nworks?",
+  image: Worker,
   content: [
     {
       title: "Call us anytime 24/7",
@@ -263,7 +258,7 @@ const BLOGS = {
 };
 
 const FAQ = {
-  title: "Frequently Asked Questions",
+  title: "Frequently Asked \nQuestions",
   content: [
     {
       question: "What is HomePro?",
@@ -295,33 +290,34 @@ const FAQ = {
 };
 
 const BANNER = {
-  title: "Already to improve or repair your home? Let’s Talk!",
+  title: "Already to improve\n or repair your home?\n Let’s Talk!",
   image: Banner,
 };
 
 const FOOTER = {
+  logo: FooterLogo,
   description:
     "Home Pro is your premier destination for top-notch smart home service and repair.",
   socials: [
     {
       icon: IconYoutube,
-      link: "https://www.youtube.com",
+      href: "https://www.youtube.com",
     },
     {
       icon: IconInstagram,
-      link: "https://www.instagram.com",
+      href: "https://www.instagram.com",
     },
     {
       icon: IconFacebook,
-      link: "https://www.facebook.com",
+      href: "https://www.facebook.com",
     },
     {
       icon: IconTwiiter,
-      link: "https://www.twitter.com",
+      href: "https://www.twitter.com",
     },
     {
       icon: IconMail,
-      link: "mailto:info@homepro.com",
+      href: "mailto:info@homepro.com",
     },
   ],
   menus: [
@@ -331,7 +327,24 @@ const FOOTER = {
     },
     {
       title: "Legal",
-      links: ["Terms", "Privacy", "Cookies", "License"],
+      links: [
+        {
+          label: "Terms",
+          href: "#terms",
+        },
+        {
+          label: "Privacy",
+          href: "#privacy",
+        },
+        {
+          label: "Cookies",
+          href: "#cookies",
+        },
+        {
+          label: "License",
+          href: "#license",
+        },
+      ],
     },
   ],
   copyright: `©${new Date().getFullYear()} HomePro. All rights reserved.`,
