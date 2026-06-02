@@ -31,25 +31,43 @@ import Thumbnail_02 from "../assets/images/blog-thumbnail-02.png";
 import Thumbnail_03 from "../assets/images/blog-thumbnail-03.png";
 import Banner from "../assets/images/banner.png";
 
-const NAV_LINKS = ["About Us", "Services", "Our Blog", "Contact"];
+const NAV_LINKS = [
+  {
+    label: "About Us",
+    href: "#about-us",
+  },
+  {
+    label: "Services",
+    href: "#services",
+  },
+  {
+    label: "Our Blog",
+    href: "#our-blog",
+  },
+  {
+    label: "Contact",
+    href: "#contact",
+  },
+];
 
 const HERO = {
+  title: "Need improvement\n or repair your home? \n we can help!",
   highlights: [
     {
       icon: IconGurantee,
-      title: "Satisfaction Guarantee",
+      title: "Satisfaction\n Guarantee",
     },
     {
       icon: IconClock,
-      title: "24H Availability",
+      title: "24H\n Availability",
     },
     {
       icon: IconMap,
-      title: "Local US Professionals",
+      title: "Local US\n Professionals",
     },
     {
       icon: IconCalendar,
-      title: "Flexible Appointments",
+      title: "Flexible\n Appointments",
     },
   ],
 };
