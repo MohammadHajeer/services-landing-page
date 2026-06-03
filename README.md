@@ -1,30 +1,54 @@
 # Landing Page Implementation
 
-A high-fidelity, fully responsive landing page built directly from a Figma design specification. This project focuses on pixel-perfect UI execution, optimized layout transitions, and modular component architecture.
+A high-fidelity, fully responsive landing page built from a Figma design specification. This project emphasizes pixel-perfect UI implementation, responsive layouts, smooth animations, and reusable component architecture.
+
+## Preview
+
+### Desktop
+
+<details>
+  <summary>Desktop Design Preview</summary>
+  <br />
+  <img src="./public/desktop-preview.png" alt="Desktop Preview" />
+</details>
+
+### Mobile
+
+<details>
+  <summary>Mobile Design Preview</summary>
+  <br />
+  <img src="./public/mobile-preview.png" alt="Mobile Preview" />
+</details>
+
+
+## Design Reference
+
+This project was developed from a Figma design, with a focus on accurately translating the provided design into a responsive and production-ready application.
+
+**Figma Design:** https://www.figma.com/community/file/1257965372422620398
 
 ## Tech Stack
 
 * **Framework:** React
 * **Styling:** Tailwind CSS
 * **Animations:** Framer Motion
+* **Package Manager:** pnpm
 
 ---
 
-## Technical Highlights & Implementation Details
+## Technical Highlights
 
-* **Figma-to-Code Precision:** Translated complex vector layouts, custom polygon clipping vectors, and design spacing systems directly into clean, responsive Tailwind code.
-* **Dynamic FAQ Accordion:** Implemented a smooth expand/collapse FAQ section utilizing Framer Motion's AnimatePresence for clean DOM unmounting animations and layout height stabilization.
-* **Bidirectional Review Carousel:** Engineered a testimonial slider that dynamically tracks interaction history, ensuring entrance and exit slide animations correspond accurately to Next and Previous navigation triggers.
-* **Fractional Star Ratings:** Developed a reusable star rating utility utilizing SVG linear gradient masks to precisely render partial decimal values (e.g., 3.4 or 4.8 stars).
-* **Advanced Asset Masking:** Utilized CSS mask-image linear gradients to achieve feathered alpha-channel edges on absolute-positioned background elements.
+* **Figma-to-Code Precision:** Translated complex layouts, custom clipping paths, and spacing systems into clean, responsive Tailwind CSS implementations.
+* **Dynamic FAQ Accordion:** Built a smooth expand/collapse FAQ experience using Framer Motion's `AnimatePresence` for seamless mounting and unmounting animations.
+* **Bidirectional Review Carousel:** Engineered a testimonial slider that tracks navigation direction, ensuring correct entrance and exit animations for both next and previous interactions.
+* **Fractional Star Ratings:** Developed a reusable star rating component using SVG linear gradients to accurately render decimal ratings such as 3.4 or 4.8.
+* **Advanced Asset Masking:** Utilized CSS `mask-image` gradients to create feathered edges on decorative background assets.
 
 ---
 
 ## Getting Started
 
 ### 1. Clone the Repository
-
-Clone the project locally using the SSH URL:
 
 ```bash
 git clone git@github.com:YOUR_USERNAME/YOUR_REPO_NAME.git
@@ -33,15 +57,11 @@ cd YOUR_REPO_NAME
 
 ### 2. Install Dependencies
 
-Install all project dependencies using pnpm:
-
 ```bash
 pnpm install
 ```
 
 ### 3. Start the Development Server
-
-Run the local development environment:
 
 ```bash
 pnpm dev
@@ -55,20 +75,17 @@ http://localhost:5173
 
 ### 4. Build for Production
 
-Create an optimized production build:
-
 ```bash
 pnpm build
 ```
 
 ### 5. Preview the Production Build
 
-Start the production server locally:
-
 ```bash
 pnpm preview
 ```
-The application will be available at:
+
+The preview server will be available at:
 
 ```text
 http://localhost:4173
