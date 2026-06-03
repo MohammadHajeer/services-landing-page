@@ -1,73 +1,75 @@
-# React + TypeScript + Vite
+# Landing Page Implementation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A high-fidelity, fully responsive landing page built directly from a Figma design specification. This project focuses on pixel-perfect UI execution, optimized layout transitions, and modular component architecture.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* **Framework:** React
+* **Styling:** Tailwind CSS
+* **Animations:** Framer Motion
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technical Highlights & Implementation Details
 
-## Expanding the ESLint configuration
+* **Figma-to-Code Precision:** Translated complex vector layouts, custom polygon clipping vectors, and design spacing systems directly into clean, responsive Tailwind code.
+* **Dynamic FAQ Accordion:** Implemented a smooth expand/collapse FAQ section utilizing Framer Motion's AnimatePresence for clean DOM unmounting animations and layout height stabilization.
+* **Bidirectional Review Carousel:** Engineered a testimonial slider that dynamically tracks interaction history, ensuring entrance and exit slide animations correspond accurately to Next and Previous navigation triggers.
+* **Fractional Star Ratings:** Developed a reusable star rating utility utilizing SVG linear gradient masks to precisely render partial decimal values (e.g., 3.4 or 4.8 stars).
+* **Advanced Asset Masking:** Utilized CSS mask-image linear gradients to achieve feathered alpha-channel edges on absolute-positioned background elements.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Getting Started
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### 1. Clone the Repository
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Clone the project locally using the SSH URL:
+
+```bash
+git clone git@github.com:YOUR_USERNAME/YOUR_REPO_NAME.git
+cd YOUR_REPO_NAME
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. Install Dependencies
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Install all project dependencies using pnpm:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+pnpm install
+```
+
+### 3. Start the Development Server
+
+Run the local development environment:
+
+```bash
+pnpm dev
+```
+
+The application will be available at:
+
+```text
+http://localhost:5173
+```
+
+### 4. Build for Production
+
+Create an optimized production build:
+
+```bash
+pnpm build
+```
+
+### 5. Preview the Production Build
+
+Start the production server locally:
+
+```bash
+pnpm preview
+```
+The application will be available at:
+
+```text
+http://localhost:4173
 ```
