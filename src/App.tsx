@@ -10,42 +10,47 @@ import {
   Reviews,
   Banner,
   FAQs,
+  Blogs,
 } from "./components/sections";
 
 function App() {
   return (
     <main>
-      {/* <Navbar /> */}
+      <Navbar />
 
-      {/* <Hero /> */}
+      <Hero />
 
-      {/* <SectionContainer id="services">
+      <SectionContainer id="services">
         <ProfesionalServices />
-      </SectionContainer> */}
+      </SectionContainer>
 
-      {/* <SectionContainer id="our-services">
+      <SectionContainer id="our-services">
         <OurServices />
-      </SectionContainer> */}
+      </SectionContainer>
 
-      {/* <SectionContainer id="featured" className="bg-primary rounded-3xl">
+      <SectionContainer id="featured" className="bg-primary rounded-3xl">
         <Featured />
-      </SectionContainer> */}
+      </SectionContainer>
 
-      {/* <SectionContainer id="how-it-works">
+      <SectionContainer id="how-it-works">
         <HowWorks />
-      </SectionContainer> */}
+      </SectionContainer>
 
       <SectionContainer id="how-it-works">
         <Reviews />
       </SectionContainer>
+      
+      <SectionContainer id="how-it-works">
+        <Blogs />
+      </SectionContainer>
 
-      {/* <SectionContainer id="how-it-works">
+      <SectionContainer id="how-it-works">
         <FAQs />
-      </SectionContainer> */}
+      </SectionContainer>
 
-      {/* <Banner /> */}
+      <Banner />
 
-      {/* <Footer /> */}
+      <Footer />
     </main>
   );
 }

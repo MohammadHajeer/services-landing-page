@@ -30,13 +30,13 @@ function Featured() {
         style={{
           clipPath: "polygon(79% 4%, 100% 0, 100% 100%, 79% 96%)",
         }}
-        className="absolute h-3/4 top-1/2 -translate-y-1/2 w-40 max-lg:w-20 right-0 bg-white translate-x-1"
+        className="absolute h-3/4 top-1/2 -translate-y-1/2 w-40 max-lg:w-20 right-0 bg-white translate-x-1 max-lg:hidden"
       ></div>
       <div
         style={{
           clipPath: "polygon(79% 4%, 100% 0, 100% 100%, 79% 96%)",
         }}
-        className="absolute h-3/4 top-1/2 -translate-y-1/2 w-40 max-lg:w-20 left-0 bg-white -translate-x-1 rotate-180"
+        className="absolute h-3/4 top-1/2 -translate-y-1/2 w-40 max-lg:w-20 left-0 bg-white -translate-x-1 rotate-180 max-lg:hidden"
       ></div>
     </>
   );

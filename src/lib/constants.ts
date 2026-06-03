@@ -23,12 +23,14 @@ import IconTwiiter from "../assets/icons/icon-twitter.svg";
 import IconMail from "../assets/icons/icon-mail.svg";
 
 import Worker from "../assets/images/how-works-worker.png";
+import Avatar from "../assets/images/avatar.png";
 import ReviewLogo from "../assets/images/review-logo.png";
 import Thumbnail_01 from "../assets/images/blog-thumbnail-01.png";
 import Thumbnail_02 from "../assets/images/blog-thumbnail-02.png";
 import Thumbnail_03 from "../assets/images/blog-thumbnail-03.png";
 import Banner from "../assets/images/banner.png";
 import FooterLogo from "../assets/images/footer-logo.png";
+import ServiceWorkers from "../assets/images/service-workers.jpg";
 
 const NAV_LINKS = [
   {
@@ -75,12 +77,13 @@ const PROFESIONAL_SERVICES = {
   title: "Professional for your home services",
   description:
     "You need help for home care? We are home care professionals focused in the US region. We provide several services that support home services",
+  image: ServiceWorkers,
   content: [
     "Repair and Installation",
-    "Maintenance",
-    "Home Security Services",
     "Plumbing",
+    "Maintenance",
     "Budget-friendly",
+    "Home Security Services",
     "Eco-friendly Solutions",
   ],
 };
@@ -203,24 +206,21 @@ const REVIEWS = {
   content: [
     {
       name: "Mohammad Hajeer",
-      review:
-        "I had a great experience with HomePro. They were quick to respond and the technician was very professional. He fixed my leaking pipe in no time. Highly recommend!",
+      text: "I had a great experience with HomePro. They were quick to respond and the technician was very professional. He fixed my leaking pipe in no time. Highly recommend!",
       rating: 5,
-      picture: Worker,
+      picture: Avatar,
     },
     {
       name: "Sarah Johnson",
-      review:
-        "HomePro provided excellent service. The technician was knowledgeable and friendly. He repaired my roof efficiently and the price was reasonable. I will definitely use their services again.",
+      text: "HomePro provided excellent service. The technician was knowledgeable and friendly. He repaired my roof efficiently and the price was reasonable. I will definitely use their services again.",
       rating: 4.3,
-      picture: Worker,
+      picture: Avatar,
     },
     {
       name: "David Smith",
-      review:
-        "I had a positive experience with HomePro. The technician was punctual and skilled. He removed the mold from my walls effectively. I am satisfied with the results and would recommend HomePro to others.",
+      text: "I had a positive experience with HomePro. The technician was punctual and skilled. He removed the mold from my walls effectively. I am satisfied with the results and would recommend HomePro to others.",
       rating: 4.8,
-      picture: Worker,
+      picture: Avatar,
     },
   ],
 };

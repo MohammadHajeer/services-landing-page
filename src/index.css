@@ -71,3 +71,13 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
+
+@utility secondary-filter {
+  filter: brightness(0) saturate(100%) invert(57%) sepia(19%) saturate(6849%)
+    hue-rotate(169deg) brightness(104%) contrast(92%);
+}
+
+@utility primary-filter {
+  filter: brightness(0) saturate(100%) invert(11%) sepia(63%) saturate(1802%)
+    hue-rotate(209deg) brightness(95%) contrast(99%);
+}

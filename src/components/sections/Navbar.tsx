@@ -15,7 +15,7 @@ function Navbar() {
   }, [isMenuOpen]);
   return (
     <>
-      <nav className="bg-primary text-primary-foreground lg:h-20 h-14 flex items-center sticky top-0 z-100">
+      <nav className="bg-primary text-primary-foreground lg:h-20 h-14 flex items-center sticky -top-0.5 z-100">
         <div className="container flex justify-between items-center">
           <div className="">
             <img src={Logo} alt="Logo" />

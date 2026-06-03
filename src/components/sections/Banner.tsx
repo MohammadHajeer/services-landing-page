@@ -12,7 +12,7 @@ function Banner() {
           style={{
             clipPath: "polygon(0 0, 100% 0, 94% 17%, 6% 17%)",
           }}
-          className="absolute top-0 left-0 2xl:w-1/3 w-2/3 h-40 bg-primary-foreground sm:translate-x-1/5 translate-x-1/4"
+          className="absolute -top-0.5 left-0 2xl:w-1/3 w-2/3 h-40 bg-primary-foreground sm:translate-x-1/5 translate-x-1/4"
         />
         <h2 className="text-[64px] max-sm:text-2xl whitespace-pre-line font-extrabold sm:leading-18 mb-6 max-sm:text-center">
           {title}

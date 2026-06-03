@@ -88,6 +88,7 @@ function Hero() {
           style={{
             clipPath:
               "polygon(0% 82%, calc(100% - 80px) 82%, 100% 100%, 0% 100%)",
+              
           }}
         />
       </div>
