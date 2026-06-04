@@ -6,7 +6,7 @@ function Featured() {
   return (
     <>
       <div className="">
-        <div className="flex xl:items-end xl:justify-between max-xl:flex-col max-lg:text-center">
+        <div className="flex xl:items-end xl:justify-between max-xl:flex-col max-lg:text-center gap-8">
           <h2 className="section-heading basis-1/2 text-primary-foreground mb-3">
             {title}
           </h2>

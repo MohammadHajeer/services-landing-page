@@ -20,15 +20,15 @@ function App() {
 
       <Hero />
 
-      <SectionContainer id="services">
+      <SectionContainer id="about-us">
         <ProfesionalServices />
       </SectionContainer>
 
-      <SectionContainer id="our-services">
+      <SectionContainer id="services">
         <OurServices />
       </SectionContainer>
 
-      <SectionContainer id="featured" className="bg-primary rounded-3xl">
+      <SectionContainer id="featured" className="bg-primary rounded-3xl" sectionClassName="px-4">
         <Featured />
       </SectionContainer>
 
@@ -36,15 +36,15 @@ function App() {
         <HowWorks />
       </SectionContainer>
 
-      <SectionContainer id="how-it-works">
+      <SectionContainer id="reviews">
         <Reviews />
       </SectionContainer>
       
-      <SectionContainer id="how-it-works">
+      <SectionContainer id="our-blog">
         <Blogs />
       </SectionContainer>
 
-      <SectionContainer id="how-it-works">
+      <SectionContainer id="faqs">
         <FAQs />
       </SectionContainer>
 

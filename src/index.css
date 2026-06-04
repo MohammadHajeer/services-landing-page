@@ -81,3 +81,7 @@
   filter: brightness(0) saturate(100%) invert(11%) sepia(63%) saturate(1802%)
     hue-rotate(209deg) brightness(95%) contrast(99%);
 }
+
+html {
+  scroll-behavior: smooth;
+}

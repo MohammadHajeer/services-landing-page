@@ -6,7 +6,7 @@ const { image, title } = BANNER;
 
 function Banner() {
   return (
-    <section className="bg-primary text-primary-foreground relative">
+    <section id="contact" className="bg-primary text-primary-foreground relative">
       <div className="container sm:pt-41.25 pt-14 pb-26.5 lg:px-24 relative ">
         <div
           style={{

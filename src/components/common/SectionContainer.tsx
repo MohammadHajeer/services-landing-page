@@ -3,8 +3,15 @@ import { cn } from "../../lib/utils";
 interface SectionContainerProps {
   children: React.ReactNode;
   id: string;
+  /**
+   * For container
+   */
   className?: string;
   defaultStyles?: boolean;
+  /**
+   * For section
+   */
+  sectionClassName?: string;
 }
 
 /**
@@ -15,11 +22,15 @@ function SectionContainer({
   id,
   className = "",
   defaultStyles = true,
+  sectionClassName = "",
 }: SectionContainerProps) {
   return (
-    <section id={id}>
+    <section id={id} className={cn(sectionClassName)}>
       <div
-        className={cn(defaultStyles && "container py-30 lg:px-24 relative", className)}
+        className={cn(
+          defaultStyles && "container py-30 lg:px-24 relative",
+          className,
+        )}
       >
         {children}
       </div>
