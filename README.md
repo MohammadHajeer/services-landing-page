@@ -31,7 +31,7 @@ This project was developed from a Figma design, with a focus on accurately trans
 
 * **Framework:** React
 * **Styling:** Tailwind CSS
-* **Animations:** Framer Motion
+* **Animations:** Motion
 * **Package Manager:** pnpm
 
 ---
@@ -42,7 +42,6 @@ This project was developed from a Figma design, with a focus on accurately trans
 * **Dynamic FAQ Accordion:** Built a smooth expand/collapse FAQ experience using Framer Motion's `AnimatePresence` for seamless mounting and unmounting animations.
 * **Bidirectional Review Carousel:** Engineered a testimonial slider that tracks navigation direction, ensuring correct entrance and exit animations for both next and previous interactions.
 * **Fractional Star Ratings:** Developed a reusable star rating component using SVG linear gradients to accurately render decimal ratings such as 3.4 or 4.8.
-* **Advanced Asset Masking:** Utilized CSS `mask-image` gradients to create feathered edges on decorative background assets.
 
 ---
 
