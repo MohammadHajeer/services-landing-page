@@ -20,6 +20,29 @@ A high-fidelity, fully responsive landing page built from a Figma design specifi
   <img src="./public/mobile-preview.png" alt="Mobile Preview" />
 </details>
 
+### Mobile Menu Demo
+
+<details>
+  <summary>Mobile Menu Demo</summary>
+  <br />
+  <img src="./public/mobile-menu-demo.gif" alt="Mobile Menu Demo" />
+</details>
+
+### Reviews Carousel Demo
+
+<details>
+  <summary>Reviews Carousel Demo</summary>
+  <br />
+  <img src="./public/carousel-demo.gif" alt="Carousel Demo" />
+</details>
+
+### FAQ Accordion Demo
+
+<details>
+  <summary>FAQ Accordion Demo</summary>
+  <br />
+  <img src="./public/accordion-demo.gif" alt="Accordion Demo" />
+</details>
 
 ## Design Reference
 

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { REVIEWS } from "../../lib/constants";
 import { RatingStars } from "../common/RatingStars";
-import { AnimatePresence, motion } from "motion/react";
+import { motion } from "motion/react";
 import { cn } from "../../lib/utils";
 
 import IconArrowRight from "../../assets/icons/icon-arrow-right.svg";
@@ -32,13 +32,19 @@ function Reviews() {
           className="max-md:hidden"
         />
 
-        <div className="flex-1">
-          <AnimatePresence initial={false} mode="wait">
-            <ReviewCard
-              key={content[activeIndex || 0].name}
-              review={content[activeIndex || 0]}
-            />
-          </AnimatePresence>
+        <div className="overflow-hidden flex flex-1">
+          {content.map((review, index) => (
+            <motion.div
+              key={index}
+              animate={{
+                x: `-${(activeIndex || 0) * 100}%`,
+              }}
+              transition={{ type: "tween" }}
+              className="w-full shrink-0"
+            >
+              <ReviewCard key={review.name} review={review} />
+            </motion.div>
+          ))}
         </div>
 
         <NavigateButton
@@ -88,18 +94,10 @@ function ReviewCard({ review }: { review: (typeof content)[0] }) {
   const { name, text, rating, picture } = review;
 
   return (
-    <motion.div
-      key={name}
-      initial={{ opacity: 0 }} // Enters from the right side
-      animate={{ opacity: 1 }} // Slides into the center smoothly
-      exit={{ opacity: 0 }} // Exits off to the left side
-      transition={{
-        x: { type: "spring", stiffness: 300, damping: 30 }, // Makes the movement snappy and organic
-        opacity: { duration: 0.2 },
-      }}
-      className="p-10 max-sm:px-0 flex flex-col items-center"
-    >
-      <p className="text-muted text-xl mb-10 max-w-2xl text-center line-clamp-5">{text}</p>
+    <div className="p-10 max-sm:px-0 flex flex-col items-center">
+      <p className="text-muted text-xl mb-10 max-w-2xl text-center line-clamp-5">
+        {text}
+      </p>
       <div className="flex items-center gap-8">
         <div className="size-19 max-sm:size-13 rounded-full overflow-hidden bg-primary-accent">
           <img src={picture} alt={name} className="size-full object-cover" />
@@ -111,7 +109,7 @@ function ReviewCard({ review }: { review: (typeof content)[0] }) {
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }
 
@@ -142,7 +140,7 @@ function NavigateButton({
         }
       }}
       className={cn(
-        "p-2 rounded-full bg-muted/20",
+        "p-2 rounded-full bg-muted/20 shrink-0",
         enabled && "bg-secondary",
         className,
       )}
