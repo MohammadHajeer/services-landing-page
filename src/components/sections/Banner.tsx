@@ -6,7 +6,7 @@ const { image, title } = BANNER;
 
 function Banner() {
   return (
-    <section id="contact" className="bg-primary text-primary-foreground relative">
+    <section id="contact" className="bg-primary text-primary-foreground relative flex max-2xl:flex-col">
       <div className="container sm:pt-41.25 pt-14 pb-26.5 lg:px-24 relative ">
         <div
           style={{
@@ -37,7 +37,7 @@ function Banner() {
         </ul>
         <CTAButton className="max-sm:mx-auto" />
       </div>
-      <div>
+      <div className="self-end">
         <img
           src={image}
           alt="Banner Image"

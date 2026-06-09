@@ -10,16 +10,18 @@ const { title, highlights } = HERO;
 function Hero() {
   return (
     <div className="bg-white pb-1 overflow-hidden">
-      <div className="bg-primary text-primary-foreground ">
+      <div className="bg-primary text-primary-foreground">
         <div className="max-w-464 px-4 mx-auto flex justify-between pb-15 relative ">
-          <div className="relative max-2xl:hidden">
+          {/* First Image */}
+          <div className="relative max-lg:hidden">
             <img
               src={WorkerRepairing}
               alt="Worker Repairing"
-              className="rounded-2xl rounded-br-none select-none"
+              className="rounded-2xl rounded-br-none select-none object-cover size-full"
             />
             <span className="absolute inset-0 -bg-linear-60 from-primary via-transparent to-transparent"></span>
           </div>
+          {/* Content */}
           <div className="flex-1 flex flex-col justify-center gap-16 max-2xl:pt-6">
             <div className="flex flex-col items-center text-center gap-8 mt-auto">
               <ul className="flex items-center gap-4 text-primary-muted font-semibold max-sm:text-sm">
@@ -29,7 +31,7 @@ function Hero() {
                 <li>•</li>
                 <li>Improvements</li>
               </ul>
-              <h2 className="md:text-6xl sm:text-5xl text-3xl font-extrabold whitespace-pre-line sm:leading-18">
+              <h2 className="lg:text-6xl sm:text-5xl text-3xl font-extrabold whitespace-pre-line sm:leading-18 px-2">
                 {title}
               </h2>
               <div className="mb-2">
@@ -67,30 +69,34 @@ function Hero() {
               </ul>
             </div>
           </div>
-          <div className="relative max-2xl:hidden">
+          {/* Second Image */}
+          <div className="relative max-lg:hidden">
             <img
               src={WorkerPlumbing}
               alt="Worker Plumbing"
-              className="rounded-2xl rounded-bl-none select-none"
+              className="rounded-2xl rounded-bl-none select-none object-cover size-full"
             />
             <span className="absolute inset-0 bg-linear-60 from-primary via-transparent to-transparent"></span>
           </div>
 
-          <div
-            className="absolute bottom-0 right-0 h-70 w-[50vw] bg-primary-foreground translate-x-1/2 translate-y-1"
-            style={{
-              clipPath:
-                "polygon(calc(0% + 80px) 82%, 100% 82%, 100% 100%, 0% 100%)",
-            }}
-          />
+          {/* Clip Paths */}
+          <>
+            <div
+              className="absolute bottom-0 right-0 h-70 w-[50vw] bg-primary-foreground translate-x-1/2 translate-y-1"
+              style={{
+                clipPath:
+                  "polygon(calc(0% + 80px) 82%, 100% 82%, 100% 100%, 0% 100%)",
+              }}
+            />
 
-          <div
-            className="absolute bottom-0 left-0 h-70 w-[50vw] bg-primary-foreground -translate-x-1/2 translate-y-1"
-            style={{
-              clipPath:
-                "polygon(0% 82%, calc(100% - 80px) 82%, 100% 100%, 0% 100%)",
-            }}
-          />
+            <div
+              className="absolute bottom-0 left-0 h-70 w-[50vw] bg-primary-foreground -translate-x-1/2 translate-y-1"
+              style={{
+                clipPath:
+                  "polygon(0% 82%, calc(100% - 80px) 82%, 100% 100%, 0% 100%)",
+              }}
+            />
+          </>
         </div>
       </div>
     </div>
@@ -101,11 +107,11 @@ export { Hero };
 
 function HighLight({ icon, title }: { icon: string; title: string }) {
   return (
-    <li className="flex gap-4 items-center justify-center max-lg:flex-col leading-5 max-sm:basis-1/3 max-sm:p-2">
+    <li className="flex gap-4 items-center justify-center max-[1150px]:flex-col leading-5 max-sm:basis-1/3 max-sm:p-2">
       <div className="p-3 bg-primary-accent rounded-full shrink-0">
         <img src={icon} alt={title} className="size-5!" />
       </div>
-      <span className="whitespace-pre-line max-lg:text-center max-sm:text-sm">
+      <span className="whitespace-pre-line max-[1150px]:text-center max-sm:text-sm">
         {title}
       </span>
     </li>

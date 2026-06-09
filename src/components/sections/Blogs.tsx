@@ -48,7 +48,7 @@ function BlogCard({ blog }: { blog: (typeof content)[0] }) {
         />
       </div>
       <span className="text-muted text-lg">{date}</span>
-      <h3 className="text-[32px] font-bold max-sm:text-[20px]">{title}</h3>
+      <h3 className="text-[32px] font-bold max-sm:text-[20px] line-clamp-2">{title}</h3>
       <p className="text-muted text-lg line-clamp-3">{description}</p>
       <div>
         <ul className="flex gap-3">
